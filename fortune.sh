@@ -15,7 +15,7 @@ function GET_FORTUNE() {
     echo Try again. Make sure it ends with a question mark:
   fi
 
-  read QUESTION
+  read -r QUESTION
 }
 
 GET_FORTUNE
@@ -25,4 +25,4 @@ do
   GET_FORTUNE again
 done
 
-echo -e "\n$RESPONSES[$N]"
+echo -e "\n${RESPONSES[$N]}"
